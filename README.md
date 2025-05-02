@@ -13,7 +13,9 @@ npm install
 npm run dev
 ```
 
-## How to deploy Clone or fork to local, modify the configuration as follows, and then select the repository in [Vercel](https://vercel.com) for deployment.
+## How to deploy 
+
+Clone or fork to local, modify the configuration as follows, and then select the repository in [Vercel](https://vercel.com) for deployment.
 
 All deployment configurations are set to default and no special configuration is required.
 
