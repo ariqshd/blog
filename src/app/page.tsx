@@ -10,7 +10,7 @@ export default function Home() {
     .sort((a: any, b: any) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
   const socialLinks = [
-    { name: "赞赏", key: "buyMeACoffee" },
+    { name: "buyMeACoffee", key: "buyMeACoffee" },
     { name: "X", key: "x" },
     { name: "小红书", key: "xiaohongshu" },
     { name: "微信公众号", key: "wechat" },
@@ -44,7 +44,7 @@ export default function Home() {
       </div>
 
       <div className="space-y-4">
-        <h2 className="text-2xl font-bold mb-8">推荐阅读</h2>
+        <h2 className="text-2xl font-bold mb-8">Notes</h2>
         <div className="space-y-8">
           {blogs.map((blog: any) => (
             <article key={blog.slug} className="">
@@ -55,7 +55,7 @@ export default function Home() {
                       {blog.title}
                     </h2>
                     <span className="text-sm text-gray-500">
-                      {formatDate(blog.date)} · {count(blog.content)} 字
+                      {formatDate(blog.date)} · {count(blog.content)} words
                     </span>
                   </div>
                   <p className="text-gray-600 line-clamp-2">

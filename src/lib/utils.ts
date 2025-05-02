@@ -10,10 +10,10 @@ export function absoluteUrl(path: string) {
 }
 
 export function formatDate(date: string) {
-  const [year, month, day] = new Date(date).toLocaleDateString('zh-CN', {
+  const options: Intl.DateTimeFormatOptions = {
     year: 'numeric',
-    month: 'numeric',
+    month: 'long',
     day: 'numeric'
-  }).split('/');
-  return `${year}年${month}月${day}日`;
+  };
+  return new Date(date).toLocaleDateString('en-GB', options);
 }
