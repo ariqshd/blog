@@ -9,14 +9,31 @@ summary: "This is a Nextjs blog template. This article will introduce some basic
 
 This is a Nextjs blog template. This article will introduce some basic usage of this template.
 
-## 1. How to write a blog The blog files of this repository need to be placed in the `src/content/blog` directory. They can be markdown files or mdx files.
+## 1. How to write a blog
+
+The blog files of this repository need to be placed in the `src/content/blog` directory. They can be markdown files or mdx files.
 
 The following metadata needs to be configured by the user according to needs:
 
-- `title`: Blog title - `date`: Blog publishing date - `updated`: Blog update date - `keywords`: Blog keywords, SEO optimization
-- `featured`: whether to put it on the homepage - `summary`: blog summary## 2. Blog configuration All blog configurations are concentrated in the `src/lib/config.ts` file. The advantages of this are:
+- `title`: Blog title
+- `date`: Blog publishing date
+- `updated`: Blog update date
+- `keywords`: Blog keywords, SEO optimization
+- `featured`: whether to put it on the homepage
+- `summary`: blog summary
+  
+## 2. Blog configuration
 
-1. Centralized management: All configurations are in one file, which is convenient for maintenance and modification. 2. Type safety: Type checking and automatic completion can be obtained by using TypeScript. 3. Reusability: Avoid repeated configurations scattered in various files. 4. Consistency: Ensure that the same configuration values ​​are used everywhere. ### 2.1 Basic site configuration ```typescript
+All blog configurations are concentrated in the `src/lib/config.ts` file. The advantages of this are:
+
+1. Centralized management: All configurations are in one file, which is convenient for maintenance and modification.
+2. Type safety: Type checking and automatic completion can be obtained by using TypeScript.
+3. Reusability: Avoid repeated configurations scattered in various files.
+4. Consistency: Ensure that the same configuration values ​​are used everywhere. 
+
+### 2.1 Basic site configuration 
+
+```typescript
 site: {
   title: "Your blog title",
   name: "Your blog name",
@@ -36,7 +53,14 @@ site: {
 ```
 
 These configurations are used to:
-- Basic information display of the website - SEO optimization - Browser tab icon - Social media sharing preview### 2.2 Author information configuration```typescript
+- Basic information display of the website
+- SEO optimization
+- Browser tab icon
+- Social media sharing preview
+
+### 2.2 Author information configuration
+
+```typescript
 author:
   name: "Your name",
   email: "your email",
@@ -45,7 +69,13 @@ author:
 ```
 
 Author information will be used to:
-- Home page display - RSS feed information - Blog article author information### 2.3 Social media configuration ```typescript
+- Home page display
+- RSS feed information
+- Blog article author information
+
+### 2.3 Social media configuration 
+
+```typescript
 social:
   github: "https://github.com/yourusername",
   x: "https://x.com/your username",
@@ -56,7 +86,12 @@ social:
 ```
 
 These links will appear in:
-- Social media link area on the homepage - Social media icons in the navigation bar### 2.4 Comment system configuration```typescript
+- Social media link area on the homepage
+- Social media icons in the navigation bar
+
+### 2.4 Comment system configuration
+
+```typescript
 giscus:
   repo: "your GitHub repository name",
   repoId: "Warehouse ID",
@@ -65,8 +100,13 @@ giscus:
 ```
 
 To use Giscus as a comment system, you need:
-1. Install Giscus application on GitHub 2. Enable Discussions in your repository
-3. Get the configuration information and fill it in here### 2.5 Navigation menu configuration```typescript
+1. Install Giscus application on GitHub
+2. Enable Discussions in your repository
+3. Get the configuration information and fill it in here
+
+### 2.5 Navigation menu configuration
+
+```typescript
 navigation:
   main: [
     { 
@@ -78,7 +118,12 @@ navigation:
 ```
 
 The website's navigation menu is configured here, supporting:
-- Normal link - Drop-down menu with submenu### 2.6 SEO configuration ``` typescript
+- Normal link
+- Drop-down menu with submenu
+
+### 2.6 SEO configuration 
+
+``` typescript
 seo:
   metadataBase: new URL("https://yourdomain.com"),
   alternates:
@@ -96,7 +141,13 @@ seo:
 ```
 
 These configurations are used to:
-- SEO - Social Media Sharing Card - Site Metadata### 2.7 RSS Subscription Configuration```typescript
+- SEO
+- Social Media Sharing Card
+- Site Metadata
+
+### 2.7 RSS Subscription Configuration
+
+```typescript
 rss:
   title: "Your blog title",
   description: "Blog description",
@@ -109,11 +160,30 @@ rss:
 ```
 
 These configurations are used to generate:
-- RSS 2.0 Feeds - JSON Feeds
-- Atom feed## 3. How to modify the configuration1. Open the `src/lib/config.ts` file2. Modify the corresponding configuration items according to your needs3. After saving the file, Next.js will automatically rebuild and apply the new configuration notes:
-- Make sure all URLs are valid - Image links should be accessible - Social media links should have full URLs
+- RSS 2.0 Feeds
+- JSON Feeds
+- Atom feed
+
+## 3. How to modify the configuration
+
+1. Open the `src/lib/config.ts` file
+2. Modify the corresponding configuration items according to your needs
+3. After saving the file, Next.js will automatically rebuild and apply the new configuration 
+
+notes:
+- Make sure all URLs are valid
+- Image links should be accessible
+- Social media links should have full URLs
 - After configuration modification, it is recommended to check the website's:
-  - Home page display - Navigation menu - SEO information - Social media sharing effect - RSS subscription source## 4. How to generate RSS subscription source Modify the configuration in the scripts/generate-rss.js file, and then run:
+  - Home page display
+  - Navigation menu
+  - SEO information
+  - Social media sharing effect
+  - RSS subscription source
+
+## 4. How to generate RSS subscription source
+
+Modify the configuration in the scripts/generate-rss.js file, and then run:
 
 ```bash
 npm run generate-rss
