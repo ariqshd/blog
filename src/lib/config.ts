@@ -1,11 +1,11 @@
 export const config = {
   site: {
-    title: "Nextjs Blog Template",
-    name: "Nextjs Blog Template",
-    description: "Nextjs Blog Template",
-    keywords: ["Nextjs Blog Template", "AI", "Full Stack Developer"],
-    url: "https://xxx.com",
-    baseUrl: "https://xxx.com",
+    title: "Tumaros",
+    name: "Tumaros",
+    description: "Ariqshd's dev notes",
+    keywords: ["Game Dev", "Unreal Engine"],
+    url: "https://004141.xyz",
+    baseUrl: "https://004141.xyz",
     image: "https://xxx.com/og-image.png",
     favicon: {
       ico: "/favicon.ico",
@@ -15,8 +15,8 @@ export const config = {
     },
     manifest: "/site.webmanifest",
     rss: {
-      title: "Nextjs Blog Template",
-      description: "Thoughts on Full-stack development, AI",
+      title: "Tumaros",
+      description: "Ariqshd's dev notes",
       feedLinks: {
         rss2: "/rss.xml",
         json: "/feed.json",
@@ -25,32 +25,30 @@ export const config = {
     },
   },
   author: {
-    name: "Your Name",
-    email: "your.email@example.com",
-    bio: "这是一个 Nextjs 博客模板",
+    name: "Ariq D. Irfanudin",
+    email: "invanteris@gmail.com",
+    bio: "Write about game dev & Unreal Engine",
   },
   social: {
-    github: "https://github.com/xxx",
-    x: "https://x.com/xxx",
-    xiaohongshu: "https://www.xiaohongshu.com/user/profile/xxx",
-    wechat: "https://storage.xxx.com/images/wechat-official-account.png",
-    buyMeACoffee: "https://www.buymeacoffee.com/xxx",
+    github: "https://github.com/ariqshd",
+    x: "https://x.com/ariqshd",
+    buyMeACoffee: "https://www.buymeacoffee.com/ariqshd",
   },
   giscus: {
-    repo: "guangzhengli/hugo-ladder-exampleSite",
-    repoId: "R_kgDOHyVOjg",
-    categoryId: "DIC_kwDOHyVOjs4CQsH7",
+    repo: "ariqshd/blog",
+    repoId: "976330125R_kgDOOjGdjQ",
+    categoryId: "DIC_kwDOOjGdjc4Cprpv",
   },
   navigation: {
     main: [
       { 
-        title: "文章", 
+        title: "Tumaros", 
         href: "/blog",
       },
     ],
   },
   seo: {
-    metadataBase: new URL("https://xxx.com"),
+    metadataBase: new URL("https://004141.xyz"),
     alternates: {
       canonical: './',
     },
@@ -60,7 +58,7 @@ export const config = {
     },
     twitter: {
       card: "summary_large_image" as const,
-      creator: "@xxx",
+      creator: "@ariqshd",
     },
   },
 };

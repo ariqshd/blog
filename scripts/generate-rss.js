@@ -10,10 +10,10 @@ import { marked } from 'marked';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-const BASE_URL = 'https://xxx.com';
+const BASE_URL = 'https://004141.xyz';
 const AUTHOR = {
-  name: "Your Name",
-  email: "your.email@example.com",
+  name: "Ariq Dhia Irfanudin",
+  email: "invanteris@gmail.com",
   link: BASE_URL
 };
 
@@ -58,14 +58,14 @@ async function generateRSSFeed() {
 
     // Create feed
     const feed = new Feed({
-      title: "Your Blog",
-      description: "Your Blog Description",
+      title: "Tumaros",
+      description: "Ariqshd's gamedev notes",
       id: BASE_URL,
       link: BASE_URL,
       language: "en",
       image: `${BASE_URL}/favicon.png`,
       favicon: `${BASE_URL}/favicon.ico`,
-      copyright: `All rights reserved ${new Date().getFullYear()}, Your Name`,
+      copyright: `All rights reserved ${new Date().getFullYear()}, Ariq Dhia Irfanudin`,
       updated: new Date(),
       generator: "Feed for Node.js",
       feedLinks: {
